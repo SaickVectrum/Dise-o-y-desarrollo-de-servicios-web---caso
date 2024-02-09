@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      {{#if user}}
+      
+      
+      <li class="nav-item">
+        <a href="/logout" class="nav-link">Salir</a>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a href="/signin" class="nav-link">Inicar Sesión</a>
+      </li>
+      <li class="nav-item">
+        <a href="/signup" class="nav-link">Registrarse</a>
+      </li>
+      {{/if}}
+    </ul>
+  </div>
+  </div>
+</nav>
